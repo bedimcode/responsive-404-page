@@ -1,0 +1,16 @@
+========== HOME ==========
+.home__subtitle
+Error 404
+
+.home__title
+Hey Buddy
+
+.home__description
+We can't seem to find the page <br> you are looking for.
+
+.home__button
+Go Home
+
+.home__footer
+(554) 987-654
+info@company.com
