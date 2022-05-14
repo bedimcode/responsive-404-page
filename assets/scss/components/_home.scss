@@ -1,0 +1,75 @@
+/*=============== HOME ===============*/
+.home{
+    background-color: var(--first-color);
+    padding: 9rem 0 2rem;
+    height: 100vh;
+    display: grid;
+
+    &__container{
+        display: grid;
+        align-content: center;
+        row-gap: 2.5rem;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        margin: .75rem 0;
+    }
+    &__button{
+        margin-top: 2rem;
+        display: inline-block;
+        background-color: var(--text-color);
+        color: #fff;
+        padding: .80rem 1.5rem;
+        border-radius: 3rem;
+        transition: .4s;
+
+        &:hover{
+            box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
+        }
+    }
+    &__img img{
+        width: 230px;
+        animation: floaty 1.8s infinite alternate;
+    }
+    &__img{
+        justify-self: center;
+    }
+    &__shadow{
+        width: 130px;
+        height: 24px;
+        background-color: hsla(38, 21%, 19%, .16);
+        margin: 0 auto;
+        border-radius: 50%;
+        filter: blur(7px);
+        animation: shadow 1.8s infinite alternate;
+    }
+    &__footer{
+        display: flex;
+        justify-content: center;
+        column-gap: .5rem;
+        font-size: var(--smaller-font-size);
+        align-self: flex-end;
+    }
+}
+
+/* Animate ghost */
+@keyframes floaty{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
+@keyframes shadow{
+    0%{
+        transform: scale(1, 1);
+    }
+    100%{
+        transform: scale(.85, .85);
+    }
+}
